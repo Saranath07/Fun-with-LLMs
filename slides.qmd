@@ -1,5 +1,5 @@
 ---
-title: "Gen AI For Proposals"
+title: "ProposaGen - Gen AI For Proposals"
 author: 
   - name: "Saranath P"
     affiliation: "310621243048"
