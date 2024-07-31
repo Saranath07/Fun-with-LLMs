@@ -190,8 +190,86 @@ Flexibility: Leverage LangChain’s modular design to integrate with various dat
 - **CI/CD Pipeline**: Implementing Continuous Integration and Continuous Deployment (CI/CD) using tools like Jenkins and Docker to streamline updates and improvements.
 - **Monitoring and Maintenance**: Using monitoring tools like Prometheus and Grafana to ensure the system is running smoothly and to identify areas for improvement.
 :::
-<!-- ![](path/to/cloud_infrastructure_image.png){width=150px}
-![](path/to/jenkins_image.png){width=150px}
-![](path/to/docker_image.png){width=150px}
-![](path/to/prometheus_image.png){width=150px}
-![](path/to/grafana_image.png){width=150px} -->
+
+
+## Demonstration: Prototype Functionality & Features
+
+### Recorded Demonstration:
+:::{style="font-size: 0.6em;"}
+- **Overview**: 
+  - The demonstration begins with an introduction to the user interface, highlighting its intuitive design.
+  - Users are guided through the process of inputting data sources including technical documents and client requirements.
+:::
+
+## Recorded Demonstration
+
+:::{style="font-size: 0.6em;"}
+- **Step-by-Step Walkthrough**:
+  - **Step 1**: Data Ingestion – Users upload relevant documents and input specific client needs.
+  - **Step 2**: Data Preprocessing – The system cleans, filters, and organizes the data automatically.
+  - **Step 3**: Content Generation – LLMs generate draft proposals tailored to the input data.
+  - **Step 4**: Customization – Users can further customize proposals through an interactive editor.
+  - **Step 5**: Finalization – The system reviews and finalizes the proposal, ensuring it meets all specified requirements.
+
+- **Key Features**:
+  - Automated data processing and content generation.
+  - Interactive proposal customization.
+  - Real-time feedback and adjustments.
+
+:::
+
+## Future Enhancements: Improving the Project
+
+### Potential Enhancements:
+:::{style="font-size: 0.6em;"}
+- **Advanced Data Analytics**:
+  - Incorporate advanced analytics to provide deeper insights and enhance proposal quality.
+- **Enhanced Personalization**:
+  - Utilize machine learning to refine and enhance personalization based on client interaction data.
+:::
+
+## Potential Enhancements
+:::{style="font-size: 0.6em;"}
+- **Integration with Business Tools**:
+  - Integrate with CRM and ERP systems to streamline the entire proposal process.
+- **AI Model Improvements**:
+  - Regular updates and training of LLMs to stay current with industry standards and evolving client needs.
+- **User Feedback Mechanism**:
+  - Implement a feedback mechanism to continuously gather and incorporate user inputs for ongoing improvement.
+:::
+
+## Project Plan: Building a Functional Prototype
+
+### Project Plan Overview:
+:::{style="font-size: 0.55em;"}
+- **Phase 1: Planning and Research**
+  - Define project scope, objectives, and deliverables.
+  - Conduct market research and gather requirements from potential users.
+
+- **Phase 2: Design and Development**
+  - Design the system architecture, focusing on modular and scalable components.
+  - Develop core components using LLMs and LangChain for data processing and automation.
+
+- **Phase 3: Testing and Refinement**
+  - Perform unit and integration testing to ensure all functionalities work seamlessly.
+  - Collect feedback from initial users to identify areas for improvement and refinement.
+
+- **Phase 4: Deployment and Demonstration**
+  - Deploy the prototype on a cloud platform for accessibility and scalability.
+  - Prepare a detailed recorded demonstration showcasing the prototype’s features and functionalities.
+:::
+
+---
+### Timeline:
+:::{style="font-size: 0.75em;"}
+- **Month 1-2**: Planning and Research
+- **Month 3-4**: Design and Development
+- **Month 5**: Testing and Refinement
+- **Month 6**: Deployment and Demonstration
+
+### Milestones:
+- **End of Month 2**: Completion of research and finalized project plan.
+- **End of Month 4**: Prototype design and initial development completed.
+- **End of Month 5**: Testing phase completed, incorporating user feedback.
+- **End of Month 6**: Successful deployment and recorded demonstration prepared.
+:::
