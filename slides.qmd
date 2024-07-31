@@ -10,6 +10,25 @@ author:
 format: revealjs
 ---
 
+## Our Identity
+
+::: {.columns}
+
+::: {.column width="33%"}
+![Saranath P](saranath.jpeg)
+:::
+
+::: {.column width="33%"}
+![Janani D](janani.jpeg)
+:::
+
+::: {.column width="33%"}
+![Hitesh S](hitesh.jpeg)
+:::
+
+:::
+
+
 ## Problem Statement
 
 :::{style="margin-top: 0px; font-size: 0.6em;"}
