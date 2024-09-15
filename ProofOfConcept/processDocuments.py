@@ -1,10 +1,12 @@
 from langchain_groq import ChatGroq
 from langchain.chains import LLMChain, RetrievalQA
 from langchain.prompts import PromptTemplate
-from langchain.document_loaders import DirectoryLoader
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
+from langchain_community.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -22,7 +24,6 @@ def process_documents(directory):
     texts = text_splitter.split_documents(documents)
     embeddings = HuggingFaceEmbeddings()
     
-    # Use Chroma instead of FAISS
     db = Chroma.from_documents(texts, embeddings, persist_directory="./chroma_db")
     return db
 
@@ -46,23 +47,27 @@ def generate_proposal(llm, db, client_requirements):
 
         Use the information from the technical documents to support your proposal.
         Ensure the proposal is tailored to the specific client requirements and industry standards.
+        DO NOT ADD ANYTHING ELSE TO THE PROPOSAL. LIKE Here is.. etc.
         """
     )
     
-    chain = LLMChain(llm=llm, prompt=prompt)
-    proposal = chain.run(client_requirements=client_requirements)
+    chain = (
+    {"client_requirements": RunnablePassthrough()} 
+    | prompt 
+    | llm 
+    | StrOutputParser()
+)
+    proposal = chain.invoke({"client_requirements": client_requirements})
+   
     
-    # Perform a follow-up analysis using the QA system
-    analysis_prompt = f"Based on the client requirements and the generated proposal, what are the key risks and how can they be mitigated?"
-    risk_analysis = qa.run(analysis_prompt)
+    analysis_prompt = f"""Based on the client requirements and the generated proposal, what are the key risks and how can they be mitigated?
+    client requirements: {client_requirements}
+    proposal: {proposal}"""
+    risk_analysis = qa.invoke({"query": analysis_prompt, "client_requirements": client_requirements, "proposal": proposal})
+    risk_analysis_text = risk_analysis['result']
     
-    return proposal, risk_analysis
+    return proposal, risk_analysis_text
 
-# Example usage
-if __name__ == "__main__":
-    llm = load_llm()
-    db = process_documents("documents")
-    client_requirements = "Example client requirements here"
-    proposal, risk_analysis = generate_proposal(llm, db, client_requirements)
-    print("Proposal:", proposal)
-    print("\nRisk Analysis:", risk_analysis)
+# process_documents("documents")
+# print("Documents processed and stored in the database.")
+    
