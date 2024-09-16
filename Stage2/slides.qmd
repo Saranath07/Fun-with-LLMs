@@ -242,7 +242,7 @@ format:
 ## <span style="color: #000080;">Solution Overview</span> {auto-animate="true"}
 
 ### Three Approaches
-:::{style="font-size:0.6em} 
+:::{style="font-size:0.7em"} 
 :::{.fragment}
 1. **Using LangChain**
    - Utilize LangChain to automate the proposal generation task.
@@ -256,6 +256,360 @@ format:
    - Fine-tune a LLaMA model using GPUs for enhanced performance and customization.
 :::
 :::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
+### Three Approaches
+:::{style="font-size:0.7em"} 
+:::{style="color:black"}
+1. **Using LangChain**
+   - Utilize LangChain to automate the proposal generation task.
+:::
+:::{style="color:grey"}
+2. **Using DeepSpeed (Dspy)**
+   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+:::
+:::{style="color:grey"}
+3. **Fine-Tuning LLaMA Model on GPUs**
+   - Fine-tune a LLaMA model using GPUs for enhanced performance and customization.
+:::
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
+
+### Approach 1: Using LangChain 
+
+:::{style="font-size:0.7em"} 
+:::{.incremental}
+- **Automation**
+  - Streamline the workflow from data input to proposal output.
+
+- **Modularity**
+  - Easily integrate with various data sources and APIs.
+
+- **Scalability**
+  - Efficiently handle multiple proposals and large datasets.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
+### Three Approaches
+:::{style="font-size:0.7em"} 
+:::{style="color:grey"}
+1. **Using LangChain**
+   - Utilize LangChain to automate the proposal generation task.
+:::
+:::{style="color:black"}
+2. **Using DeepSpeed (Dspy)**
+   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+:::
+:::{style="color:grey"}
+3. **Fine-Tuning LLaMA Model on GPUs**
+   - Fine-tune a LLaMA model using GPUs for enhanced performance and customization.
+:::
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
+
+### Approach 2: Using DeepSpeed (Dspy)
+:::{style="font-size:0.7em"} 
+:::{.incremental}
+
+- **Optimized Performance**
+  - Utilize DeepSpeed for faster data processing and model training.
+
+- **Component Retrieval**
+  - Fetch and assemble individual proposal components efficiently.
+
+- **Resource Efficiency**
+  - Leverage DeepSpeed's optimizations to reduce computational costs.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
+### Three Approaches
+:::{style="font-size:0.7em"} 
+:::{style="color:grey"}
+1. **Using LangChain**
+   - Utilize LangChain to automate the proposal generation task.
+:::
+:::{style="color:grey"}
+2. **Using DeepSpeed (Dspy)**
+   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+:::
+:::{style="color:black"}
+3. **Fine-Tuning LLaMA Model on GPUs**
+   - Fine-tune a LLaMA model using GPUs for enhanced performance and customization.
+:::
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
+
+### Approach 3: Fine-Tuning LLaMA Model on GPUs 
+
+:::{style="font-size:0.7em"} 
+:::{.incremental}
+
+- **Customization**
+  - Fine-tune the LLaMA model to align closely with client-specific terminology and requirements.
+
+- **Enhanced Performance**
+  - Use GPUs to accelerate model training and inference.
+
+- **Improved Accuracy**
+  - Achieve higher precision in generated proposals through tailored fine-tuning.
+:::
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Technical Implemetation</span> {auto-animate="true"}
+
+#### List of Technologies, Tools, and Frameworks Used
+:::{style="font-size:0.6em"}
+:::{.fragment fragment-index=1}
+- **LangChain**: Used for chaining various LLM models and facilitating the integration with LLaMA 8B model.
+:::
+
+:::{.fragment fragment-index=2}
+- **LLaMA 8B/70B Model**: Pretrained model which has understanding of the language.
+:::
+
+:::{.fragment fragment-index=3}
+- **ChromaDB**: A vector store for document embeddings, used to store and retrieve contextual information during proposal generation.
+:::
+
+:::{.fragment fragment-index=4}
+- **DSPy**: Used for extracting detailed sections of the proposal such as executive summaries, client needs, and proposed solutions.
+:::
+
+:::{.fragment fragment-index=5}
+- **Python**: Core programming language for implementing the logic and handling backend processes.
+:::
+
+:::{.fragment fragment-index=6}
+- **PyTorch**: For training and fine-tuning the LLaMA models on GPUs.
+:::
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Technical Implemetation - (contd)</span> {auto-animate="true"}
+:::{style="font-size:0.6em"}
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+### Explanation of How These Technologies Were Applied
+
+:::{.fragment fragment-index=1}
+- **LangChain Integration**: Facilitated the connection between the LLaMA 8B model and the proposal generation pipeline, allowing for dynamic response generation based on previous client examples.
+:::
+
+:::{.fragment fragment-index=2}
+- **ChromaDB**: Utilized to store historical client documents and examples, which were later retrieved and used to enhance proposal content.
+:::
+
+:::{.fragment fragment-index=3}
+- **DSPy**: Extracted and structured various parts of the proposal, including client needs analysis, risk assessment, and executive summaries, ensuring consistency across genres.
+:::
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Technical Implemetation - (contd)</span> {auto-animate="true"}
+### Technical Difficulties Faced and Resolved
+:::{style="font-size:0.6em"}
+:::{.fragment fragment-index=1}
+**Challenge**: Handling large datasets and documents with high variability in structure.
+:::
+:::{.fragment fragment-index=2}
+- **Solution**: Implemented `RecursiveCharacterTextSplitter` for efficient text processing, ensuring even large documents were split and processed correctly.
+:::
+
+:::{.fragment fragment-index=3}
+**Challenge**: Managing memory usage with large-scale embeddings.
+:::
+:::{.fragment fragment-index=4}
+- **Solution**: Used Chroma's efficient database and retrieval system to offload large embeddings, allowing for faster and scalable proposal generation.
+:::
+
+:::{.fragment fragment-index=5}
+**Challenge**: Training the LLaMA model for fine-tuning.
+:::
+:::{.fragment fragment-index=6}
+- Due to lack of resources, we did not yet fine-tune the LLaMA model, but we plan to do so before the stage 3 presentation.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Technical Implemetation - (contd)</span> {auto-animate="true"}
+
+#### Scalability and Flexibility of the Technical Architecture
+:::{style="font-size:0.7em"}
+:::{.fragment fragment-index=1}
+- **Scalable Architecture**: By leveraging ChromaDB, the system is designed to scale as more client documents and proposals are added. The system can efficiently handle large datasets and provide quick retrieval of relevant information.
+:::
+
+:::{.fragment fragment-index=2}
+- **Flexibility**: The integration of DSPy allows for modular updates and customizations to the proposal sections, making the system adaptable to various client requirements across different domains.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+
+## <span style="color: #000080;">Novelty</span> {auto-animate="true"}
+
+### Prior Art Search on Published Literature
+:::{style="font-size:0.7em"}
+:::{.incremental}
+- Conducted a comprehensive prior art search across published literature in domains such as AI-powered proposal generation, LLMs for personalized content, and AI-driven contextual analysis.
+- Key sources included academic databases, patents, and industry white papers focused on AI in document processing and proposal customization.
+- No existing solution combines LangChain, DSPy, and LLaMA 8B with ChromaDB for real-time, personalized proposal generation with industry-specific contextualization.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Novelty - (contd)</span> {auto-animate="true"}
+
+### Unique Differentiators of Our Solution
+:::{style="font-size:0.7em"}
+:::{.fragment fragment-index=1}
+- **Dynamic Proposal Generation**: Leveraging LangChain and DSPy, our system offers real-time proposal creation that adapts to specific client needs, incorporating personalized industry examples that cannot be easily replicated by competitors.
+:::
+
+:::{.fragment fragment-index=2}
+- **Contextual Retrieval with ChromaDB**: Unlike traditional systems, our solution uses ChromaDB to store and retrieve relevant client documents as context, making it nearly impossible for competitors to replicate the same level of customization and contextual understanding.
+:::
+
+:::{.fragment fragment-index=3}
+- **Integration of DSPy Modules**: DSPy modules allow for structured, detailed, and domain-specific proposal generation that incorporates industry standards, providing a unique edge over competitors.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+## <span style="color: #000080;">Novelty - (contd)</span> {auto-animate="true"}
+### Competitor Benchmarking
+:::{style="font-size:0.6em"}
+:::{.fragment fragment-index=1}
+- **Feature 1**: Real-time, personalized proposal generation based on specific client needs.
+  - **Competitor**: Limited personalization, often requiring manual inputs.
+  - **Our Solution**: Fully automated and scalable proposal generation tailored to industry and client.
+:::
+
+:::{.fragment fragment-index=2}
+- **Feature 2**: Contextual document retrieval and dynamic updates.
+  - **Competitor**: Basic static template-based proposals.
+  - **Our Solution**: Uses ChromaDB for retrieving relevant documents, ensuring proposals are always up to date.
+:::
+
+:::{.fragment fragment-index=3}
+- **Feature 3**: Modular architecture using DSPy.
+  - **Competitor**: Non-modular, hard-coded proposal systems.
+  - **Our Solution**: Flexible DSPy modules allow for easy customization and addition of new features, maintaining competitive advantage.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Novelty - (contd)</span> {auto-animate="true"}
+### Novelty Claim Support
+:::{style="font-size:0.7em"}
+:::{.incremental}
+- **Prior Art Search Findings**: No existing solution offers the same combination of LangChain, DSPy, LLaMA 8B, and ChromaDB for personalized proposal generation.
+- **Competitor Benchmarking**: Our solution significantly outperforms existing competitors in flexibility, scalability, and context-based generation.
+- **Expert Validation**: Novelty claim backed by published literature, competitor analysis, and unique technical architecture that cannot be easily replicated.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Challenges Faced</span> {auto-animate="true"}
+### Identification of Specific Challenges
+:::{style="font-size:0.7em"}
+:::{.fragment fragment-index=1}
+- **AI Hallucination**: At times, the LLaMA 8B model generated outputs that were irrelevant or inaccurate, affecting the quality of the proposals.
+:::
+
+:::{.fragment fragment-index=2}
+- **GPU Training Constraints**: Finetuning the model using Low-Rank Adaptation (LoRA) was challenging due to GPU limitations and availability.
+:::
+
+:::{.fragment fragment-index=3}
+- **Dataset Collection**: Gathering relevant and high-quality datasets for fine-tuning and training the model was time-consuming and required extensive validation.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Challenges Faced - (contd)</span> {auto-animate="true"}
+### Strategies and Solutions Used
+:::{style="font-size:0.7em"}
+:::{.fragment fragment-index=1}
+- **Mitigating AI Hallucination**: Implemented context management strategies using ChromaDB to ensure the model has access to relevant and accurate information when generating proposals.
+:::
+
+:::{.fragment fragment-index=2}
+- **Overcoming GPU Constraints**: We have requested our college GPUs using which we can train the model and can use DSPy in that model instead of a pretrained, original llama model.
+:::
+:::{.fragment fragment-index=3}
+- **Improving Dataset Collection**: We expanded our data collection efforts to include publicly available datasets and collaborated with domain experts to ensure the relevance and quality of the data used for model finetuning.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+## <span style="color: #000080;">Challenges Faced - (contd)</span> {auto-animate="true"}
+### Lessons Learned
+:::{style="font-size:0.7em"}
+:::{.fragment fragment-index=1}
+- **AI Hallucination**: Ensuring proper context retrieval is critical for maintaining the accuracy and relevance of AI-generated content.
+:::
+
+:::{.fragment fragment-index=2}
+- **GPU Training**: LoRA proved to be an effective strategy for overcoming GPU limitations and achieving model finetuning with fewer resources.
+:::
+
+:::{.fragment fragment-index=3}
+- **Dataset Collection**: Collecting and curating high-quality datasets is essential for successful model training and significantly impacts the performance and reliability of the AI system.
+:::
+:::
+
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
