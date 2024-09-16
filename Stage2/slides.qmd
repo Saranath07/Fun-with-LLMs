@@ -1,5 +1,6 @@
 ---
-title: "ProposaGen - Gen AI For Proposals - Stage 2"
+title: "ProposaGen - Gen AI For Proposals : Stage 2"
+subtitle: Easwari Engineering College
 author: 
   - name: "Saranath P"
     affiliation: "310621243048"
@@ -352,7 +353,7 @@ format:
 2. **Using DeepSpeed (Dspy)**
    - Fetch individual components for proposals using DeepSpeed for optimized processing.
 :::
-:::{style="color:black"}
+:::{style="color:{exec_summary.data}"}
 3. **Fine-Tuning LLaMA Model on GPUs**
    - Fine-tune a LLaMA model using GPUs for enhanced performance and customization.
 :::
