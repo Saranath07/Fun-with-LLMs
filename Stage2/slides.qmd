@@ -37,7 +37,7 @@ format:
 
 ## <span style="color: #000080;">Problem Statement</span> {auto-animate=true}
 ### Significant Market Opportunity
-:::{style="font-size:0.7em"}
+:::{style="font-size:0.6em"}
 
 ::: {.fragment}
 - **Expanding AI Market**
@@ -234,6 +234,27 @@ format:
 :::{.fragment}
 - **Expansion**
   - Explore expanding the solution to other domains beyond technical and engineering proposals.
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Solution Overview</span> {auto-animate="true"}
+
+### Three Approaches
+:::{style="font-size:0.6em} 
+:::{.fragment}
+1. **Using LangChain**
+   - Utilize LangChain to automate the proposal generation task.
+:::
+:::{.fragment}
+2. **Using DeepSpeed (Dspy)**
+   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+:::
+:::{.fragment}
+3. **Fine-Tuning LLaMA Model on GPUs**
+   - Fine-tune a LLaMA model using GPUs for enhanced performance and customization.
+:::
 :::
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
