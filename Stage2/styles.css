@@ -1,0 +1,18 @@
+.reveal .slides {
+    position: relative;
+  }
+  
+  .reveal .slides::after {
+    content: "";
+    background-image: url('Tata.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    opacity: 0.8; /* Adjust transparency */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px; /* Adjust size */
+    height: auto;
+    pointer-events: none; /* Ensures the logo doesn't interfere with slide interactions */
+  }

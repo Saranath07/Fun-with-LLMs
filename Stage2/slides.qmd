@@ -1,0 +1,240 @@
+---
+title: "ProposaGen - Gen AI For Proposals - Stage 2"
+author: 
+  - name: "Saranath P"
+    affiliation: "310621243048"
+  - name: "Janani D"
+    affiliation: "310621243022"
+  - name: "Hitesh S"
+    affiliation: "310621243020"
+format: 
+    revealjs:
+        chalkboard: true
+        multiplex: true
+        transition: slide
+        background-transition: fade
+---
+
+
+
+## <span style="color: #000080;">Meet Our Team - ProposaGen</span>
+
+:::{style="font-size:0.7em"}
+- **Saranath P**
+  - Role: *Project Lead*
+  - Expertise: AI Integration, Proposal Management
+- **Janani D**
+  - Role: *Developer*
+  - Expertise: Backend Development, Data Processing
+- **Hitesh S**
+  - Role: *Data Engineer*
+  - Expertise: Data Preparation, Data Visualization
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Problem Statement</span> {auto-animate=true}
+### Significant Market Opportunity
+:::{style="font-size:0.7em"}
+
+::: {.fragment}
+- **Expanding AI Market**
+  - Global AI market projected to reach **$390.9 billion by 2025**.
+:::
+
+::: {.fragment}
+- **Growth in Proposal Software**
+  - Proposal management software market expected to grow at a **CAGR of 14%** from 2021 to 2026.
+:::
+
+::: {.fragment}
+- **Rising Demand for Automation in India**
+  - The size of the Indian industrial automation market is valued at 15 billion dollars in 2024. The market is expected to grow to around 29 billion dollars by 2029.
+:::
+
+::: {.fragment}
+- **Investment in AI Technologies**
+  - Organizations investing heavily in AI to gain competitive advantage.
+:::
+
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Problem Statement - (contd)</span> {auto-animate=true}
+### Challenges in Proposal Development
+:::{style="font-size:0.6em"}
+
+:::{.fragment}
+- **Time-Consuming Process**
+  - Manual creation of proposals is labor-intensive.
+:::
+
+:::{.fragment}
+- **Lack of Personalization**
+  - Difficulty tailoring proposals to specific client needs.
+:::
+
+:::{.fragment}
+- **Inconsistent Quality**
+  - Variability in content and presentation across proposals.
+:::
+
+:::{.fragment}
+- **Limited Data Utilization**
+  - Challenges in analyzing vast technical documents and designs.
+:::
+
+:::{.fragment}
+- **Inefficient Resource Allocation**
+  - High manual effort leads to increased costs and missed deadlines.
+:::
+
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Problem Statement - (contd)</span> {auto-animate=true}
+
+### Addressing Real-World Challenges
+:::{style="font-size:0.7em"}
+
+::: {.fragment}
+- **Inefficiency in Traditional Methods**
+  - Manual proposal creation is time-consuming and prone to errors.
+:::
+
+::: {.fragment}
+- **Competitive Business Environment**
+  - Companies need quick turnaround times to stay ahead.
+:::
+
+::: {.fragment}
+- **Customization Demand**
+  - Clients expect proposals tailored to their specific needs.
+:::
+
+::: {.fragment}
+- **Cost Reduction Pressure**
+  - Automating proposals reduces operational costs.
+:::
+
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Demography</span>
+
+:::{}
+![](chart.png)
+:::
+
+
+## <span style="color: #000080;">Objective and Approach</span> {auto-animate="true"}
+
+### Overview 
+:::{.fragment}
+- **Goal**: Develop an AI-driven system to automate and personalize client proposals.
+:::
+:::{.fragment}
+- **Approach**: Utilize advanced AI technologies and frameworks to generate customized proposals efficiently.
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
+
+### Key Objectives 
+
+:::{style="font-size:0.7em"}
+:::{.fragment}
+- **Data Collection**
+  - Gather extensive data from technical documents and engineering designs relevant to client needs.
+:::
+:::{.fragment}
+- **Data Processing**
+  - Analyze and understand complex requirements using advanced algorithms and machine learning techniques.
+:::
+:::{.fragment}
+- **Content Generation**
+  - Employ Large Language Models (LLMs) to generate precise, customized proposal content aligned with client specifications.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
+### Integration with LangChain 
+:::{style="font-size:0.7em"}
+:::{.fragment}
+- **Automation**
+  - Implement LangChain to automate the end-to-end proposal generation workflow.
+:::
+:::{.fragment}
+- **Scalability**
+  - Leverage LangChain's infrastructure to handle large data volumes and generate multiple proposals efficiently.
+:::
+:::{.fragment}
+- **Flexibility**
+  - Adapt to various data sources and client requirements using LangChain's modular design.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
+### Personalization and Accuracy 
+:::{.fragment}
+- **Tailored Proposals**
+  - Customize proposals to include specific technical details and design elements required by clients.
+:::
+:::{.fragment}
+- **Precision**
+  - Ensure high accuracy by continuously refining LLM models with client feedback and additional data.
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
+### Efficiency and Competitive Edge
+:::{style="font-size:0.7em"}
+:::{.fragment}
+- **Reduced Manual Effort**
+  - Automate repetitive tasks involved in proposal creation.
+:::
+:::{.fragment}
+- **Time Savings**
+  - Decrease the time needed to develop proposals, enabling quick responses to client needs.
+:::
+:::{.fragment}
+- **Competitive Advantage**
+  - Deliver high-quality, personalized proposals faster than competitors.
+:::
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
+### Future Enhancements 
+:::{.fragment}
+- **Continuous Improvement**
+  - Implement feedback loops to refine LLM models and the proposal generation process.
+:::
+:::{.fragment}
+- **Expansion**
+  - Explore expanding the solution to other domains beyond technical and engineering proposals.
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
