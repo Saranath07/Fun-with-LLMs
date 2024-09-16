@@ -14,6 +14,29 @@ timeline_rag = TimelineMilestonesRAG()
 pricing_payment_rag = PricingPaymentRAG()
 next_steps_rag = NextStepsRAG()
 
+def generate_proposal(client_requirements):
+    exec_summary = executive_summary_rag(requirements=client_requirements)
+    client_needs = client_needs_rag(requirements=client_requirements)
+    proposed_solution = proposed_solution_rag(requirements=client_requirements)
+    timeline = timeline_rag(requirements=client_requirements)
+    pricing_payment = pricing_payment_rag(requirements=client_requirements)
+    next_steps = next_steps_rag(requirements=client_requirements)
+
+    proposal = f""" # Executive Summary \n {exec_summary.data}
+
+    # Client Needs Analysis \n {client_needs.data}
+
+    # Proposed Solution \n {proposed_solution.data}
+
+    # Timeline and Milestones \n {timeline.data}
+
+    # Pricing and Payment Terms \n {pricing_payment.data}
+
+    # Next Steps \n {next_steps.data}
+    """
+    return proposal
+
+
 with open('client_requirements.txt', 'r') as file:
     client_requirements = file.read()
 
