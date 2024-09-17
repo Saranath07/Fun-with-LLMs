@@ -14,12 +14,12 @@ dspy.settings.configure(retriever=retriever)
 
 # Define signatures for our RAG pipeline
 class GenerateQuery(dspy.Signature):
-    """Generate a search query based on the solution requirements."""
+    """Generate a search query based on the solution requirements. """
     requirements = dspy.InputField()
     query = dspy.OutputField()
 
 class GenerateProposedSolution(dspy.Signature):
-    """Generate a proposed solution with technical specifications based on the context and requirements."""
+    """Generate a proposed solution with technical specifications based on the context and requirements. DO NOT START WITH HERE... JUST OUTPUT THE PROPOSED SOLUTION"""
     context = dspy.InputField()
     requirements = dspy.InputField()
     proposed_solution = dspy.OutputField(desc="300-word proposed solution including technical specifications")

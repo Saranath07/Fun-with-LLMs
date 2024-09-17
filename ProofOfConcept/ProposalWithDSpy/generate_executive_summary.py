@@ -18,7 +18,7 @@ class GenerateExecutiveSummary(dspy.Signature):
     """Generate an executive summary based on the context and requirements."""
     context = dspy.InputField()
     requirements = dspy.InputField()
-    executive_summary = dspy.OutputField(desc="500-word executive summary")
+    executive_summary = dspy.OutputField(desc="200-word executive summary")
 
 # RAG module for generating executive summary
 class ExecutiveSummaryRAG(dspy.Module):

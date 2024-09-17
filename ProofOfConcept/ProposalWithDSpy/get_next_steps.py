@@ -15,7 +15,7 @@ class GenerateQuery(dspy.Signature):
 
 
 class GenerateNextSteps(dspy.Signature):
-    """Generate next steps for the project based on the solution requirements."""
+    """Generate next steps for the project based on the solution requirements. DO NOT STARTE WITH HERE... JUST OUTPUT THE NEXT STEPS"""
     requirements = dspy.InputField()
     next_steps = dspy.OutputField(desc="200-word next steps")
 

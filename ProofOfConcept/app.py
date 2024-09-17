@@ -68,6 +68,8 @@ def generate_proposal_dspy_task(self, client_requirements):
 
     # Step 1: Executive Summary
     exec_summary = executive_summary_rag(requirements=client_requirements)
+    print(exec_summary.data)
+    print("\n")
     current_step += 1
     self.update_state(state='PROGRESS', meta={
         'current': current_step,
@@ -83,7 +85,8 @@ def generate_proposal_dspy_task(self, client_requirements):
         'total': total_steps,
         'status': 'Client Needs Analysis completed.'
     })
-
+    print(client_needs.data)
+    print("\n")
     # Step 3: Proposed Solution
     proposed_solution = proposed_solution_rag(requirements=client_requirements)
     current_step += 1
@@ -92,7 +95,8 @@ def generate_proposal_dspy_task(self, client_requirements):
         'total': total_steps,
         'status': 'Proposed Solution completed.'
     })
-
+    print(proposed_solution.data)
+    print("\n")
     # Step 4: Feasibility Study
     feasibility_study = feasibility_study_rag(requirements=client_requirements)
     current_step += 1
@@ -101,7 +105,8 @@ def generate_proposal_dspy_task(self, client_requirements):
         'total': total_steps,
         'status': 'Feasibility Study completed.'
     })
-
+    print(feasibility_study.data)
+    print("\n")
     # Step 5: Timeline and Milestones
     timeline = timeline_rag(requirements=client_requirements)
     current_step += 1
@@ -110,7 +115,8 @@ def generate_proposal_dspy_task(self, client_requirements):
         'total': total_steps,
         'status': 'Timeline and Milestones completed.'
     })
-
+    print(timeline.data)
+    print("\n")
     # Step 6: Pricing and Payment Terms
     pricing_payment = pricing_payment_rag(requirements=client_requirements)
     current_step += 1
@@ -119,16 +125,18 @@ def generate_proposal_dspy_task(self, client_requirements):
         'total': total_steps,
         'status': 'Pricing and Payment Terms completed.'
     })
-
+    print(pricing_payment.data)
+    print("\n")
     # Step 7: Next Steps
     next_steps = next_steps_rag(requirements=client_requirements)
     current_step += 1
     self.update_state(state='PROGRESS', meta={
         'current': current_step,
         'total': total_steps,
-        'status': 'Next Steps completed.'
+        'status': 'Future Step generation completed.'
     })
-
+    print(next_steps.data)
+    print("\n")
     proposal = f"""# Executive Summary \n {exec_summary.data}
 
 # Client Needs Analysis \n {client_needs.data}

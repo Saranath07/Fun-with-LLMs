@@ -26,7 +26,7 @@ class GenerateQuery(dspy.Signature):
     query = dspy.OutputField()
 
 class GenerateTimeline(dspy.Signature):
-    """Generate a timeline and milestones for the project based on the solution requirements."""
+    """Generate a timeline and milestones for the project based on the solution requirements. DO NOT START WITH HERE... JUST OUTPUT THE TIMELINE AND MILESTONES"""
     requirements = dspy.InputField()
     timeline = dspy.OutputField(desc="300-word timeline and milestones")
 

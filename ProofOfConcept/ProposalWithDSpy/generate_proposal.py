@@ -6,6 +6,7 @@ from .get_timeline import TimelineMilestonesRAG
 from .get_pricing import PricingPaymentRAG
 from .get_next_steps import NextStepsRAG
 from .model import load_llm
+
 import dspy
 
 
@@ -54,10 +55,15 @@ def generate_proposal_dspy(client_requirements):
     return proposal
 
 
-# with open('client_requirements.txt', 'r') as file:
-#     client_requirements = file.read()
+with open('client_requirements.txt', 'r') as file:
+    client_requirements = file.read()
 
+llm = load_llm()
+colbertv2_wiki17_abstracts = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17_abstracts')
 
+dspy.settings.configure(lm=llm, rm=colbertv2_wiki17_abstracts)
+client_needs_rag = ClientNeedsAnalysisRAG()
+print(client_needs_rag(client_requirements).data)
 # print(generate_proposal(client_requirements))
 
 # exec_summary = executive_summary_rag(requirements=client_requirements)

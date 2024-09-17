@@ -15,9 +15,9 @@ class GenerateQuery(dspy.Signature):
     query = dspy.OutputField()
 
 class GenerateFeasibilityStudy(dspy.Signature):
-    """Generate a feasibility study and risk analysis based on the solution requirements."""
+    """Generate a feasibility study and risk analysis based on the solution requirements. DO NOT START WITH HERE... JUST OUTPUT THE FEASIBILITY STUDY"""
     requirements = dspy.InputField()
-    feasibility_study = dspy.OutputField(desc="400-word feasibility study and risk analysis")
+    feasibility_study = dspy.OutputField(desc="200-word feasibility study and risk analysis")
 
 class FeasibilityStudyRAG(dspy.Module):
     def __init__(self, num_passages=5):
