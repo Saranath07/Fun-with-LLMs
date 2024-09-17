@@ -614,3 +614,71 @@ format:
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
+## <span style="color: #000080;">Results and Achievements</span> {auto-animate="true"}
+
+:::{style="font-size:0.7em"}
+
+::: {.fragment}
+- **LangChain Integration**
+  - Generated complete proposals instantly upon inputting requirements.
+  - **Time Efficiency**: Reduced proposal generation time to **10 seconds** per proposal.
+:::
+
+::: {.fragment}
+- **Dspy (DeepSpeed) Implementation**
+  - Extracted specific sections for detailed proposals.
+  - **Detail Enhancement**: Provided in-depth content, improving proposal quality.
+  - **Processing Time**: Took **2-3 minutes** per proposal.
+:::
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+
+
+
+## <span style="color: #000080;">Demonstration Video</span> {auto-animate="true"}
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+## <span style="color: #000080;">Project Plan for Completion of Prototype and Future Enhancements</span> {auto-animate="true"}
+
+:::{style="font-size:0.7em"}
+
+::: {.fragment}
+- **Prototype Completion Timeline**
+  - Build a working prototype by **mid-December**.
+  - **Milestones**:
+    - **August**: Finalize project requirements and design specifications. 
+    - **September**: Develop and integrate core functionalities - LangChain and DSpy for POC.
+    - **October**: Integrating GPUs and training a full fldged model for client proposals.
+    - **November**: Testing and Debugging.
+    - **Mid-December**: Prototype deployment and demonstration.
+:::
+:::
+::: {.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+## <span style="color: #000080;">Project Plan for Completion of Prototype and Future Enhancements</span> {auto-animate="true"}
+
+:::{style="font-size:0.7em"}
+
+- **Resources and Tools Required**
+  - **Hardware**:
+    - GPUs for model training and fine-tuning.
+  - **Software**:
+    - LangChain, DeepSpeed (Dspy), LLaMA models.
+  - **Procurement Plan**:
+    - Secure necessary hardware resources by **end of October**.
+    - Obtain software licenses and set up development environment.
+
+
+:::
+
+::: {.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
