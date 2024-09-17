@@ -27,7 +27,7 @@ def process_documents(directory):
     db = Chroma.from_documents(texts, embeddings, persist_directory="./chroma_db")
     return db
 
-def generate_proposal(client_requirements):
+def generate_proposal_langchain(client_requirements):
     def load_existing_db(persist_directory="./chroma_db"):
         embeddings = HuggingFaceEmbeddings()
         db = Chroma(persist_directory=persist_directory, embedding_function=embeddings)

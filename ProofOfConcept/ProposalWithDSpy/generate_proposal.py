@@ -11,7 +11,7 @@ import dspy
 
 
 
-def generate_proposal(client_requirements):
+def generate_proposal_dspy(client_requirements):
     llm = load_llm()
     colbertv2_wiki17_abstracts = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17_abstracts')
 
