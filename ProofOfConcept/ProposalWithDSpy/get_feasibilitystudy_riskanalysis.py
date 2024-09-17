@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from dsp.utils import deduplicate
 import os
 from typing import List
-from process_documents import process_documents, collection
+from .process_documents import process_documents, collection
 
 load_dotenv()
 
