@@ -5,32 +5,47 @@ from .get_feasibilitystudy_riskanalysis import FeasibilityStudyRAG
 from .get_timeline import TimelineMilestonesRAG
 from .get_pricing import PricingPaymentRAG
 from .get_next_steps import NextStepsRAG
+from .model import load_llm
+import dspy
 
 
 
 
 def generate_proposal(client_requirements):
-    
+    llm = load_llm()
+    colbertv2_wiki17_abstracts = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17_abstracts')
+
+    dspy.settings.configure(lm=llm, rm=colbertv2_wiki17_abstracts)
     executive_summary_rag = ExecutiveSummaryRAG()
     client_needs_rag = ClientNeedsAnalysisRAG()
     proposed_solution_rag = ProposedSolutionRAG()
+    feasibility_study_rag = FeasibilityStudyRAG()
     timeline_rag = TimelineMilestonesRAG()
     pricing_payment_rag = PricingPaymentRAG()
     next_steps_rag = NextStepsRAG()
     exec_summary = executive_summary_rag(requirements=client_requirements)
+    print('exec_summary done')
     client_needs = client_needs_rag(requirements=client_requirements)
+    print('client_needs done')
     proposed_solution = proposed_solution_rag(requirements=client_requirements)
+    print('proposed_solution done')
+    feasibility_study = feasibility_study_rag(requirements=client_requirements)
+    print('feasibility_study done')
     timeline = timeline_rag(requirements=client_requirements)
+    print('timeline done')
     pricing_payment = pricing_payment_rag(requirements=client_requirements)
+    print('pricing_payment done')
     next_steps = next_steps_rag(requirements=client_requirements)
 
-    proposal = f""" # Executive Summary \n {exec_summary.data}
+    proposal = f"""# Executive Summary \n {exec_summary.data}
 
     # Client Needs Analysis \n {client_needs.data}
 
     # Proposed Solution \n {proposed_solution.data}
 
     # Timeline and Milestones \n {timeline.data}
+
+    # Feasibility Study and Risk Analysis \n {feasibility_study.data}
 
     # Pricing and Payment Terms \n {pricing_payment.data}
 
@@ -43,7 +58,7 @@ def generate_proposal(client_requirements):
 #     client_requirements = file.read()
 
 
-
+# print(generate_proposal(client_requirements))
 
 # exec_summary = executive_summary_rag(requirements=client_requirements)
 # client_needs = client_needs_rag(requirements=client_requirements)

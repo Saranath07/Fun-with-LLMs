@@ -27,7 +27,15 @@ def process_documents(directory):
     db = Chroma.from_documents(texts, embeddings, persist_directory="./chroma_db")
     return db
 
-def generate_proposal(llm, db, client_requirements):
+def generate_proposal(client_requirements):
+    def load_existing_db(persist_directory="./chroma_db"):
+        embeddings = HuggingFaceEmbeddings()
+        db = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
+        return db
+
+    llm = load_llm()
+    db = load_existing_db("documents")
+    
     qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=db.as_retriever())
     
     prompt = PromptTemplate(
@@ -66,7 +74,7 @@ def generate_proposal(llm, db, client_requirements):
     risk_analysis = qa.invoke({"query": analysis_prompt, "client_requirements": client_requirements, "proposal": proposal})
     risk_analysis_text = risk_analysis['result']
     
-    return proposal, risk_analysis_text
+    return proposal
 
 # process_documents("documents")
 # print("Documents processed and stored in the database.")

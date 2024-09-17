@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash, Markup
 import markdown
 from ProposalWithDSpy.generate_proposal import generate_proposal
+# from processDocuments import generate_proposal
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
@@ -39,7 +40,9 @@ def upload():
         #     with open(MARKDOWN_FILE_PATH, 'r') as file:
         #         content = file.read()
             # Convert the text content to Markdown
-            content = "example Markdown"
+            requirements = request.form['text']
+            
+            content = generate_proposal(requirements)
             markdown_content = Markup(markdown.markdown(content))
             return render_template('result.html', data=markdown_content)
         # else:
