@@ -641,6 +641,8 @@ format:
 
 ## <span style="color: #000080;">Demonstration Video</span> {auto-animate="true"}
 
+![](TataTechDemo.mp4)
+
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
