@@ -16,10 +16,10 @@ class GenerateQuery(dspy.Signature):
     query = dspy.OutputField()
 
 class AnalyzeClientNeeds(dspy.Signature):
-    """Generate a detailed analysis of client's needs based on the context and requirements."""
+    """Generate a detailed analysis of client's needs based on the context and requirements.  Use equations and also explain architectures to explain various stuffs in more detail. When rendering latex equations use $ $ """
     context = dspy.InputField()
     requirements = dspy.InputField()
-    analysis = dspy.OutputField(desc="500-700 word detailed analysis of client's needs")
+    analysis = dspy.OutputField(desc="500-700 word detailed analysis of client's needs. Use equations and also explain architectures to explain various stuffs in more detail. When rendering latex equations use $ $")
 
 # RAG module for generating client needs analysis
 class ClientNeedsAnalysisRAG(dspy.Module):

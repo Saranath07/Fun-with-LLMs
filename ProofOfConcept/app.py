@@ -1,9 +1,13 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for, session, flash, Markup
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 import markdown
+from markupsafe import Markup
 from ProposalWithDSpy.generate_proposal import generate_proposal_dspy
 from processDocuments import generate_proposal_langchain
+from dotenv import load_dotenv
 
+
+load_dotenv()
 from celery import Celery
 
 app = Flask(__name__)
@@ -151,6 +155,7 @@ def generate_proposal_dspy_task(self, client_requirements):
 
 # Next Steps \n {next_steps.data}
 """
+    
     return {'current': 100, 'total': 100, 'status': 'Task completed!', 'result': proposal}
 # Dummy user for login validation
 users = {"admin": "password"}
@@ -169,6 +174,7 @@ def home():
 def login():
     # Your existing login code
     if request.method == 'POST':
+        print("Posting")
         username = request.form['username']
         password = request.form['password']
         if username in users and users[username] == password:
@@ -180,6 +186,7 @@ def login():
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
+    print("upload page")
     if 'username' not in session:
         return redirect(url_for('login'))
 
@@ -194,6 +201,7 @@ def upload():
         elif action == 'langchain':
             # Handle LangChain option
             content = generate_proposal_langchain(requirements)
+            # content = f"$\\dfrac{{1}}{{2}}$"
             markdown_content = Markup(markdown.markdown(content))
             return render_template('result.html', data=markdown_content)
         else:
@@ -250,6 +258,8 @@ def result(task_id):
     task = generate_proposal_dspy_task.AsyncResult(task_id)
     if task.state == 'SUCCESS':
         proposal = task.info.get('result', '')
+        # with open("DSPY_Proposal.md", "r") as f:
+        #     proposal = f.read()
         markdown_content = Markup(markdown.markdown(proposal))
         return render_template('result.html', data=markdown_content)
     else:
