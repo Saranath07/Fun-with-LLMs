@@ -40,7 +40,7 @@ format:
 
 :::{style="font-size:0.7em"}
 - **Code Base - GitHub** : [Fun-with-LLMs : ProofOfConcept](https://github.com/Saranath07/Fun-with-LLMs/tree/main/ProofOfConcept)
-- **Video Link** : [Click for Video](https://drive.google.com/file/d/1Hzz3QwLK7LK97Ht0k_eD49USLsybfke8/view?usp=sharing)
+- **Video Link** : [Click for Video](https://drive.google.com/file/d/1xW8iWCNTMjJX_PR57qARHrbu9xyZTIUi/view?usp=sharing)
 :::
 
 :::{.absolute bottom="0px" right="0px"}
@@ -652,8 +652,8 @@ format:
 
 ## <span style="color: #000080;">Demonstration Video</span> {auto-animate="true"}
 
-[Video Link](https://drive.google.com/file/d/1Hzz3QwLK7LK97Ht0k_eD49USLsybfke8/view?usp=sharing)
-![](TataTechDemo.mp4)
+[Video Link](https://drive.google.com/file/d/1xW8iWCNTMjJX_PR57qARHrbu9xyZTIUi/view?usp=sharing)
+
 
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
