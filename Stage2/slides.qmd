@@ -35,6 +35,16 @@ format:
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
+## <span style="color: #000080;">Important Links - ProposaGen</span>
+
+:::{style="font-size:0.7em"}
+- **Code Base - GitHub** : [Fun-with-LLMs : ProofOfConcept](https://github.com/Saranath07/Fun-with-LLMs/tree/main/ProofOfConcept)
+- **Video Link** : [Click for Video](https://drive.google.com/file/d/1Hzz3QwLK7LK97Ht0k_eD49USLsybfke8/view?usp=sharing)
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
 
 ## <span style="color: #000080;">Problem Statement</span> {auto-animate=true}
 ### Significant Market Opportunity
