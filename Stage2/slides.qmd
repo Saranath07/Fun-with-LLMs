@@ -39,6 +39,7 @@ format:
 ## <span style="color: #000080;">Important Links - ProposaGen</span>
 
 :::{style="font-size:0.7em"}
+- **Slides link** - [Slides](https://saranath07.github.io/Fun-with-LLMs/Stage2/slides.html#/title-slide)
 - **Code Base - GitHub** : [Fun-with-LLMs : ProofOfConcept](https://github.com/Saranath07/Fun-with-LLMs/tree/main/ProofOfConcept)
 - **Video Link** : [Click for Video](https://drive.google.com/file/d/1xW8iWCNTMjJX_PR57qARHrbu9xyZTIUi/view?usp=sharing)
 :::
