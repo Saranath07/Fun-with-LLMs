@@ -1,5 +1,11 @@
 # Start the application
 
+For downloading the requirements use this command
+
+```
+pip3 install requirements.txt
+```
+
 Use this command to start the python application in a terminal
 
 ```
