@@ -206,17 +206,52 @@ format:
 
 ## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
 ### Personalization and Accuracy 
+## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
+
+### Personalization and Accuracy 
+::: {style="font-size:0.7em"} 
+::: {.columns}
+
+::: {.column width="50%"}
+
 :::{.fragment}
 - **Tailored Proposals**
   - Customize proposals to include specific technical details and design elements required by clients.
 :::
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment}
+![](tailored_proposals.png){width=50%}
+:::
+
+:::
+
+::: {.column width="50%"}
+
 :::{.fragment}
 - **Precision**
   - Ensure high accuracy by continuously refining LLM models with client feedback and additional data.
 :::
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment}
+![](precisions.png){width=50%}
+:::
+
+:::
+
+:::
+:::
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
+
 
 ## <span style="color: #000080;">Objective and Approach - (contd)</span> {auto-animate="true"}
 ### Efficiency and Competitive Edge
@@ -255,23 +290,102 @@ format:
 ## <span style="color: #000080;">Solution Overview</span> {auto-animate="true"}
 
 ### Three Approaches
-:::{style="font-size:0.7em"} 
+
+::: {style="font-size:0.7em"} 
+
+::: {.columns}
+
+::: {.column width="50%"}
+
 :::{.fragment}
 1. **Using LangChain**
    - Utilize LangChain to automate the proposal generation task.
 :::
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment}
+![](langchain.png){width=50%}
+:::
+
+:::
+
+::: {.column width="50%"}
+
 :::{.fragment}
 2. **Using DeepSpeed (Dspy)**
    - Fetch individual components for proposals using DeepSpeed for optimized processing.
 :::
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment}
+![](dspy.png){width=50%}
+:::
+
+:::
+
+::: {.column width="50%"}
+
 :::{.fragment}
 3. **Fine-Tuning LLaMA Model on GPUs**
    - Fine-tune a LLaMA model using GPUs for enhanced performance and customization.
 :::
+
 :::
+
+::: {.column width="50%"}
+
+:::{.fragment}
+![](nvidea.png){width=50%}
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: 
+
 :::{.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
+
 
 ## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
 ### Three Approaches
@@ -660,7 +774,7 @@ format:
 ![](Tata.png)
 :::
 
-## <span style="color: #000080;">Project Plan for Completion of Prototype and Future Enhancements</span> {auto-animate="true"}
+## <span style="color: #000080;">Project Plan for Completion of Prototype</span> {auto-animate="true"}
 
 :::{style="font-size:0.7em"}
 
@@ -678,7 +792,7 @@ format:
 ::: {.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
-## <span style="color: #000080;">Project Plan for Completion of Prototype and Future Enhancements</span> {auto-animate="true"}
+## <span style="color: #000080;">Project Plan for Completion of Prototype</span> {auto-animate="true"}
 
 :::{style="font-size:0.7em"}
 
@@ -697,3 +811,61 @@ format:
 ::: {.absolute bottom="0px" right="0px"}
 ![](Tata.png)
 :::
+
+## <span style="color: #000080;">Future Enhancements</span> {auto-animate="true"}
+
+
+
+### 1. Guardrails for Jailbreaks
+:::{style="font-size:0.7em"}
+::: {.fragment}
+- **Guardrails for Jailbreaks**
+  - Implement robust safety mechanisms to prevent unauthorized manipulations of the AI model.
+  - Develop real-time monitoring systems to detect and mitigate attempts to bypass security measures.
+:::
+:::
+::: {.fragment}
+![](guardrails.png){width=50%}
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+---
+
+### 2. Differential Privacy
+:::{style="font-size:0.7em"}
+::: {.fragment}
+- **Differential Privacy**
+  - Integrate differential privacy techniques to protect sensitive user data during model training and inference.
+  - Ensure that the AI system complies with data protection regulations by minimizing data exposure risks.
+:::
+:::
+::: {.fragment}
+![](differential_privacy.png){width=70%}
+:::
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+---
+
+### 3. Bias Mitigation
+:::{style="font-size:0.7em"}
+::: {.fragment}
+- **Bias Mitigation**
+  - Continuously evaluate the model for potential biases in its predictions and recommendations.
+  - Employ strategies such as re-sampling, re-weighting, and algorithmic adjustments to reduce bias.
+:::
+:::
+::: {.fragment}
+![](bias_mitigation.png){width=50%}
+:::
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
+
+
+
+
