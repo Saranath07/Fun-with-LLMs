@@ -316,8 +316,8 @@ format:
 ::: {.column width="50%"}
 
 :::{.fragment}
-2. **Using DeepSpeed (Dspy)**
-   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+2. **Using DEMONSTRATE–SEARCH–PREDICT (Dspy)**
+   - Fetch individual components for proposals using DSPy for optimized processing.
 :::
 
 :::
@@ -396,8 +396,8 @@ format:
    - Utilize LangChain to automate the proposal generation task.
 :::
 :::{style="color:grey"}
-2. **Using DeepSpeed (Dspy)**
-   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+2. **Using DEMONSTRATE–SEARCH–PREDICT: (Dspy)**
+   - Fetch individual components for proposals using DSPy for optimized processing.
 :::
 :::{style="color:grey"}
 3. **Fine-Tuning LLaMA Model on GPUs**
@@ -437,8 +437,8 @@ format:
    - Utilize LangChain to automate the proposal generation task.
 :::
 :::{style="color:black"}
-2. **Using DeepSpeed (Dspy)**
-   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+2. **Using DEMONSTRATE–SEARCH–PREDICT: (Dspy)**
+   - Fetch individual components for proposals using DSPy for optimized processing.
 :::
 :::{style="color:grey"}
 3. **Fine-Tuning LLaMA Model on GPUs**
@@ -451,18 +451,18 @@ format:
 :::
 ## <span style="color: #000080;">Solution Overview - (contd)</span> {auto-animate="true"}
 
-### Approach 2: Using DeepSpeed (Dspy)
+### Approach 2: Using Dspy
 :::{style="font-size:0.7em"} 
 :::{.incremental}
 
 - **Optimized Performance**
-  - Utilize DeepSpeed for faster data processing and model training.
+  - Utilize DSPy for faster data processing and model training.
 
 - **Component Retrieval**
   - Fetch and assemble individual proposal components efficiently.
 
 - **Resource Efficiency**
-  - Leverage DeepSpeed's optimizations to reduce computational costs.
+  - Leverage DSPy's optimizations to reduce computational costs.
 :::
 :::
 :::{.absolute bottom="0px" right="0px"}
@@ -477,8 +477,8 @@ format:
    - Utilize LangChain to automate the proposal generation task.
 :::
 :::{style="color:grey"}
-2. **Using DeepSpeed (Dspy)**
-   - Fetch individual components for proposals using DeepSpeed for optimized processing.
+2. **Using DEMONSTRATE–SEARCH–PREDICT: (Dspy)**
+   - Fetch individual components for proposals using DSPy for optimized processing.
 :::
 :::{style="color:{exec_summary.data}"}
 3. **Fine-Tuning LLaMA Model on GPUs**
@@ -752,7 +752,7 @@ format:
 :::
 
 ::: {.fragment}
-- **Dspy (DeepSpeed) Implementation**
+- **Dspy Implementation**
   - Extracted specific sections for detailed proposals.
   - **Detail Enhancement**: Provided in-depth content, improving proposal quality.
   - **Processing Time**: Took **2-3 minutes** per proposal.
@@ -801,7 +801,7 @@ format:
   - **Hardware**:
     - GPUs for model training and fine-tuning.
   - **Software**:
-    - LangChain, DeepSpeed (Dspy), LLaMA models.
+    - LangChain, Dspy, LLaMA models.
   - **Procurement Plan**:
     - Secure necessary hardware resources by **end of October**.
     - Obtain software licenses and set up development environment.
