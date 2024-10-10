@@ -55,16 +55,16 @@ def generate_proposal_dspy(client_requirements):
     return proposal
 
 
-with open('client_requirements.txt', 'r') as file:
-    client_requirements = file.read()
+# with open('client_requirements.txt', 'r') as file:
+#     client_requirements = file.read()
 
-llm = load_llm()
-# llm = dspy.Together(model='meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo', max_tokens=2500)
-colbertv2_wiki17_abstracts = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17_abstracts')
+# llm = load_llm()
+# # llm = dspy.Together(model='meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo', max_tokens=2500)
+# colbertv2_wiki17_abstracts = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17_abstracts')
 
-dspy.settings.configure(lm=llm, rm=colbertv2_wiki17_abstracts)
-client_needs_rag = ClientNeedsAnalysisRAG()
-print(client_needs_rag(client_requirements).data)
+# dspy.settings.configure(lm=llm, rm=colbertv2_wiki17_abstracts)
+# client_needs_rag = ClientNeedsAnalysisRAG()
+# print(client_needs_rag(client_requirements).data)
 # print(generate_proposal(client_requirements))
 
 # exec_summary = executive_summary_rag(requirements=client_requirements)

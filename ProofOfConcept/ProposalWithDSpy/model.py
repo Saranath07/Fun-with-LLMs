@@ -7,6 +7,6 @@ load_dotenv()
 
 def load_llm():
 
-    llm = dspy.Together(model='meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo', max_tokens=2500)
+    llm = dspy.LM(model="together_ai/meta-llama/Llama-3.2-90B-Vision-Instruct-Turbo")
     
     return llm

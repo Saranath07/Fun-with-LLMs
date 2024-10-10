@@ -1,31 +1,12 @@
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
-from langchain.chains import LLMChain, RetrievalQA
-from langchain.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
+import dspy
+import os
 
-load_dotenv()
+load_dotenv()  # This will load variables from .env into environment
 
+api_key = os.getenv('TOGETHER_API_KEY')
 
-model = ChatGroq(
-        model="llama-3.1-70b-versatile",
-        max_tokens=8000
-    )
+llm = dspy.LM(model="together_ai/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
+dspy.configure(lm=llm)
 
-prompt = PromptTemplate(
-    input_variables=["input"],
-    template="Tell me about {input}?"
-)
-
-
-chain = (
-    {"input": RunnablePassthrough()} 
-    | prompt 
-    | model 
-    | StrOutputParser()
-)
-
-output = chain.invoke("icecream")
-
-print(output)
+print(llm("Hello! How are you doing?"))
