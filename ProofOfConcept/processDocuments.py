@@ -13,7 +13,7 @@ load_dotenv()
 
 def load_llm():
     return ChatGroq(
-        model="llama-3.1-70b-versatile",
+        model="llama-3.2-90b-text-preview",
         max_tokens=8000
     )
 
