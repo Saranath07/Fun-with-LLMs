@@ -20,7 +20,7 @@ class GenerateQuery(dspy.Signature):
 class GeneratePricingTerms(dspy.Signature):
     """Generate pricing and payment terms based on the solution requirements. DO NOT START WITH HERE... JUST OUTPUT THE PRICING AND PAYMENT TERMS"""
     requirements = dspy.InputField()
-    pricing_terms = dspy.OutputField(desc="200-word pricing and payment terms")
+    pricing_terms = dspy.OutputField(desc="200- 500 word pricing and payment terms only")
 
 class PricingPaymentRAG(dspy.Module):
     def __init__(self, num_passages=5):

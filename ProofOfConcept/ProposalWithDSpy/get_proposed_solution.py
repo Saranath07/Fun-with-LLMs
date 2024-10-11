@@ -19,10 +19,12 @@ class GenerateQuery(dspy.Signature):
     query = dspy.OutputField()
 
 class GenerateProposedSolution(dspy.Signature):
-    """Generate a proposed solution with technical specifications based on the context and requirements. DO NOT START WITH HERE... JUST OUTPUT THE PROPOSED SOLUTION"""
+    """Generate a proposed solution with technical specifications based on the context and requirements. Use Latex and Markdown to enhance and
+    explain the solution so that its easily understandable.
+      DO NOT START WITH HERE... JUST OUTPUT THE PROPOSED SOLUTION"""
     context = dspy.InputField()
     requirements = dspy.InputField()
-    proposed_solution = dspy.OutputField(desc="300-word proposed solution including technical specifications")
+    proposed_solution = dspy.OutputField(desc="300- 700 word proposed solution including technical specifications only.")
 
 # RAG module for generating proposed solution
 class ProposedSolutionRAG(dspy.Module):

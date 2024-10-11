@@ -42,6 +42,8 @@ def generate_proposal_langchain(client_requirements):
         input_variables=["client_requirements"],
         template="""
         Generate a detailed and professional proposal based on the following client requirements:
+        IT SHOULD VERY WELL DETAILED AND SHOULD CONTAIN EQUATIONS AND A PROPER WORDINGS WHICH IS APPLICABLE TO INDUSTRY STANDARDS. USE MARKDOWN AND 
+        LATEX WHEREVER APPLICABLE. AVOID CODES.
         {client_requirements}
 
         Your proposal should include:

@@ -17,7 +17,13 @@ format:
         background-transition: fade
 ---
 
+## In Memory of Ratan Tata
 
+![](ratantata.png){ width=100% }
+
+:::{.absolute bottom="0px" right="0px"}
+![](Tata.png)
+:::
 
 ## <span style="color: #000080;">Meet Our Team - ProposaGen</span>
 
