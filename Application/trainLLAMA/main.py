@@ -12,8 +12,8 @@ preprocessor = DataPreprocessor()
 
 # Process data
 processed_data = preprocessor.process_files(
-    requirements_dir="path/to/requirements",
-    proposals_dir="path/to/proposals"
+    requirements_dir="Application/data/requirements",
+    proposals_dir="Application/data/proposals"
 )
 
 # Initialize model and tokenizer
