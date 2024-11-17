@@ -14,10 +14,10 @@ class TrainingConfig:
     lora_target_modules: List[str] = ("q_proj", "v_proj")
     
     # Training parameters
-    num_train_epochs: int = 3
-    per_device_train_batch_size: int = 4
-    per_device_eval_batch_size: int = 4
-    gradient_accumulation_steps: int = 4
+    num_train_epochs: int = 250
+    per_device_train_batch_size: int = 16
+    per_device_eval_batch_size: int = 16
+    gradient_accumulation_steps: int = 500
     learning_rate: float = 2e-4
     max_grad_norm: float = 1.0
     warmup_steps: int = 100
